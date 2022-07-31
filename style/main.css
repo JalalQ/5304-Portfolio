@@ -1,0 +1,203 @@
+/*!
+    * CSS file for Jalaluddin Qureshi (www.jalalq.ca) website.
+ */
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+.container-banner {
+    position: relative;
+}
+
+.text-banner, .text-banner-sub {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #302E31;/*#332198;*/
+}
+
+.text-banner {
+    top: 4%;
+    font-weight: bold;
+}
+
+.text-banner-sub {
+    top: 27%;
+}
+
+@media (min-width: 300px) {
+	.icon {
+		max-width: 65px;
+		margin-left:35px;
+	}
+	.text-banner, .text-banner-sub {
+		margin-top: 0;
+	}
+    .text-banner {
+        font-size: 1.3rem;
+    }
+    .text-banner-sub {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 400px) {
+	.text-banner, .text-banner-sub {
+		margin-top: 2px;
+	}
+    .text-banner {
+        font-size: 1.6rem;
+    }
+    .text-banner-sub {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 576px) {
+	.icon {
+		max-width: 100%;
+		margin-left:70px;
+	}
+	.text-banner, .text-banner-sub {
+		margin-top: 5px;
+	}
+    .text-banner {
+        font-size: 2rem;
+    }
+    .text-banner-sub {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+	.text-banner, .text-banner-sub {
+		margin-top: 7px;
+	}
+    .text-banner {
+        font-size: 2.5rem;
+    }
+    .text-banner-sub {
+        font-size: 1.5rem;
+    }
+	
+	.navbar-nav li {
+		padding: 0 50px 0 20px !important;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.text-banner, .text-banner-sub {
+		margin-top: 9px;
+	}
+    .text-banner {
+        font-size: 3rem;
+    }
+    .text-banner-sub {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-banner {
+        font-size: 3.5rem;
+    }
+    .text-banner-sub {
+        font-size: 2.5rem;
+    }
+}
+
+
+.hdr {
+    text-transform: uppercase;
+    background-color: #006BA6;
+    color: #FEFDFF;
+    padding: 0.2em;
+    margin-bottom: 0.75em;
+    text-align: center;
+}
+
+.case-sub-head {
+	color: #22181C;
+	text-decoration: underline;
+}
+
+.sub-hdr, .case-head {
+    color: #22181C;
+    text-align: center;
+}
+
+.sub-hdr {
+	text-transform: uppercase;
+	border-bottom: 3px solid #22181C;
+}
+
+.about {
+    margin-top: 16px;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+footer {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#para-footer {
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.project {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin-top: 37px;
+}
+
+.project h3 {
+    margin: 11px 0px;
+    color: #22181C;
+    text-decoration: underline;
+}
+
+.project p {
+    margin-top: 11px;
+}
+
+.navbar-nav li {
+    padding: 0 100px 0 30px;
+}
+
+#projects {
+    margin-bottom: 9px;
+}
+
+.case {
+	background-color: #FEFDFF;
+    border: 2px ridge #8EB1C7;
+    margin-top: 2em;
+    padding: 1.5em 2em;	
+}
+
+.center-img {
+	display: block;
+	margin: auto;
+}
+
+figcaption	{
+	font-weight: bold;
+}
+
+
+
+
+

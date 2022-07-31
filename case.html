@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>Jalaluddin Qureshi</title>
+        <meta name="description" content="Case Study of the Geraldton Hospital" />
+		<meta name="keywords" content="Wireframe, Flowchart.">
+        <meta name="author" content="Jalaluddin Qureshi">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="style/bootstrap.css" rel="stylesheet">
+		<link href="style/main.css" rel="stylesheet">
+        
+    </head>
+	
+	<body>
+	
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary" >
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse text-center justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+	
+	<main role="main">
+	
+		<article class="container-fluid case">
+		
+			<h1 class="case-head">Doctor Feature for Hospital Website</h1>
+			<h2 class="case-head">Case-Study</h2>
+			
+				
+			<section>
+				<h3 class="case-sub-head">Objective</h3>
+				<p>
+					This was a group-project, in which my team had to evaluate a Northern Ontario hospital
+					website (<a href="http://www.geraldtondh.com/">Geraldton District Hospital</a>), 
+					and come up with proposal to improve the website design. The objective of the 
+					hospital website evaluation was to,
+					<ul>
+						<li>make the website more navigable and hence improve accessibility,</li>
+						<li>add new features which are currently not there on the website,</li>
+						<li>develop a content management system (CMS) so that the admin of the hospital can 
+						maintain the content of the website conveniently,</li>
+						<li>design the dataflow model of the CRUD (create, read, update ad delete) 
+						functionalities of the newly proposed features, which list the sequence of steps 
+						as the user complete any of the CRUD functionality,</li>
+						<li>design the wireframes of the features.</li>
+					</ul>
+					
+					Aspects such as the design of the navigational menu and addition of a new features was 
+					a group activity, working on the design of a feature was an individual activity. I 
+					worked on the design of the hospital "doctor's feature". 
+					
+					This has to be done while keeping in consideration personas of visitors visiting the website. 
+					By adding new features such as list of doctors at the hospital, and news blog would increase 
+					the engagement of community with the hospital. They can use the list of doctors page to 
+					showcase the skillsets of physicians serving at their hospital, which can provide good 
+					marketing for the hospital.
+				</p>
+			</section>
+			
+			<section>
+				<h3 class="case-sub-head">Database Table Design:</h3>
+				
+				<p>
+					The database table of the doctor is illustrated in the image below.
+				</p>
+				
+				<div class="text-center">
+					<figure>
+						<img src="images/doctor-table.jpg" alt="Doctor database table entries" class="img-thumbnail">
+						<figcaption>Database table with list of fields and data type.</figcaption>
+					</figure>
+				</div>
+				
+				<p>
+					Only the "Personal" field is nullable, apart from this all the other fields must be input. User 
+					is informed about the nullable field with the "(Optional)" tag next to the field name on the form.
+				</p>
+				
+				<p>
+					DoctorID is the primary key (PK) which uniquely identifies a doctor in the database. This primary 
+					key can also be used to link it to the doctor’s appointment feature. The photo stores the photo 
+					(passport sized professional headshot) which would be displayed on the doctor’s profile. The FullName
+					field would display the full name of the doctor (first, middle and last name). The CPSOReg is the 
+					CPSO professional registration of the doctor. The Email field would include the official email address
+					of the doctor. The Education field will list the post-secondary educational qualification of the doctor
+					along with the university attended by the doctor. 
+				</p>
+
+				<p>
+					The photo field will store one photo of the doctor. Saving multiple photos would require establishing 
+					a one-to-many relationship, which would make the database design relatively complex. The Expertise field 
+					would list the medical expertise which the doctor has e.g. weight loss, rehabilitation counselling. 
+					The Biography and Personal field would store a short professional biographical account of the doctor, 
+					and the personal field would store information about the personal interest of the doctor.
+				</p>
+
+			</section>
+			
+			
+			<section>
+				<h3 class="case-sub-head">Thought-process:</h3>
+			
+				<p>
+					First an evaluation of the current features of the hospital website was performed. 
+					During this activity the importance for each of the page was evaluated based on how frequently 
+					the page is updated, and then based on the relevancy for each of the page, a proposal was
+					made whether to keep or discard the page.
+				</p>
+
+				<p>
+					Card-sorting activity was then conducted with the help of volunteers to improve the navigation
+					menu design. For the newly proposed features, or those which required a re-design, a list of 
+					error messages when submitting the form was written along with constructive feedback for the 
+					user to correct the message was written down. A form validation error message would be shown 
+					to the user whenever the form input does not match the range of valid input values for the field.
+				</p>
+
+				<p>
+					Once the form error messages were written down, a dataflow model for the sequence of steps 
+					which the user would perform to successfully complete the CRUD (create, read, update, delete)
+					features was the designed. This sequence of steps then served as the foundation for the 
+					final wireframes. The dataflow provided direction for the back-end developer to take, 
+					such as update the database table when the user adds a new doctor. The wireframe can be used
+					by a front-end developer to develop the design of the webpage.
+				</p>
+				
+				<p>
+					Flowcharts and wireframes for the different operations of the doctor's features are discussed 
+					in the next subsections.
+				</p>
+
+			</section>
+			
+			<section>
+				<h4 class="case-sub-head">List of doctor and visitor view of doctor page</h4>
+				<p>
+					The list of doctor is the default view which the admin sees when updating
+					the doctor's information. Wireframe of the list of doctor page which the 
+					admin user can see, and the information about a doctor which a visitor to 
+					the hospital website can see are shown below.
+				</p>
+
+				<div class="row text-center justify-content-around project-row">
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/List-Doctors.jpg">
+						<img src="images/List-Doctors.jpg" alt="Wireframe for list of doctors webpage." class="img-fluid">
+					</a>
+					<figcaption>Wireframe for list of doctors webpage which can be seen by visitors to the website.</figcaption>
+				</figure>
+				
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Doctor-View.jpg">
+						<img src="images/Doctor-View.jpg" alt="Wireframe for a doctor's information page." class="img-fluid">
+					</a>
+					<figcaption>Wireframe for a doctor's information page which can be seen by a visitor to the hospital website.</figcaption>
+				</figure>
+				
+				</div>
+				
+			</section>
+			
+			<section>
+				<h4 class="case-sub-head">Adding a New Doctor</h4>
+				<p>
+					A flowchart of the sequence of steps when adding a new doctor, and the wireframe for
+					the webpage is give below.
+				</p>
+
+
+				<div class="row text-center justify-content-around project-row">
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Add-Doctor-Flowchart.jpg">
+						<img src="images/Add-Doctor-Flowchart.jpg" alt="Flowchart for adding a new doctor." class="img-fluid">
+					</a>
+					<figcaption>Flowchart for adding a new doctor, along with form validation error messages.</figcaption>
+				</figure>
+				
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Add-Doctor.jpg">
+						<img src="images/Add-Doctor.jpg" alt="Wireframe for the add new doctor form page." class="img-fluid">
+					</a>
+					<figcaption>Wireframe for adding a new doctor form web page, along with form validation error messages.</figcaption>
+				</figure>
+				
+				</div>
+				
+			</section>
+			
+			
+			<section>
+				<h4 class="case-sub-head">Updating the profile of an existing doctor</h4>
+				<p>
+					A flowchart of the sequence of steps when updating the profile of an
+					existing doctor, and the wireframe for the webpage is give below.
+				</p>
+
+				<div class="row text-center justify-content-around project-row">
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Update-Doctor-Flowchart.jpg">
+						<img src="images/Update-Doctor-Flowchart.jpg" alt="Flowchart for updating the profile of an existing doctor." class="img-fluid">
+					</a>
+					<figcaption>Flowchart for updating the information about a doctor, along with form validation error messages.</figcaption>
+				</figure>
+				
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Update-Doctor.jpg">
+						<img src="images/Update-Doctor.jpg" alt="Wireframe for updating a doctor web page." class="img-fluid">
+					</a>
+					<figcaption>Wireframe for updating the profile of an existing doctor.</figcaption>
+				</figure>
+				
+				</div>
+				
+			</section>
+				
+				
+			<section>
+				<h4 class="case-sub-head">Deleting the profile of a doctor</h4>
+				<p>
+					A flowchart of the sequence of steps of deleting the profile of an
+					existing doctor, and the wireframe for the webpage is give below.
+				</p>
+
+
+				<div class="row text-center justify-content-around project-row">
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Del-Doctor-Flowchart.jpg">
+						<img src="images/Del-Doctor-Flowchart.jpg" alt="Flowchart for deleting the profile of a doctor." class="img-fluid">
+					</a>
+					<figcaption>Flowchart for deleting the profile of a doctor by an admin.</figcaption>
+				</figure>
+				
+				
+				<figure class="text-center col-lg-5 align-self-center">
+					<a target="_blank" href="images/Del-Doctor.jpg">
+						<img src="images/Del-Doctor.jpg" alt="Wireframe for the delete confirmation page." class="img-fluid">
+					</a>
+					<figcaption>Wireframe for the delete confirmation.</figcaption>
+				</figure>
+				
+				</div>
+				
+			</section>
+		
+		
+		</article>
+		
+		
+		
+	</main>
+
+	<footer class="bg-primary">
+		<p id="para-footer">Copyright &copy; 2021. Jalaluddin Qureshi</p>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="script/jquery-3.6.0.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="script/bootstrap.min.js"></script>
+
+	</body>
+
+</html>
